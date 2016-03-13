@@ -329,35 +329,42 @@ March 2nd - March 9th: Fix final bug fixes, create final report
                 <a href="#gdrive">Google Drive Sharing</a>
               </ul>
 
-              <h5 id="mdl">Material Design Language</h5>
-              Lecture Square utilized MDL's elements including Navigation Drawer and MotionButton, etc. </br>
-              his is material design. </br>
-              This spec is a living document that will be updated as we continue to develop the tenets and specifics of material design.
               <section class="moduleF1">
-                <div class="figure-group">
-                  <div class="figure-row">
-                    <figure>
-                    <div class="media">
-                                <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-eV81TDFrR2ZPU1E/whatismaterial_3d_elevation4.png"  />
-                            </div>
-                          <figcaption>
-                      <p>An example app layout with an open navigation drawer, along with a cross-section diagram of its component elevations along its z-axis.</p>
-                    </figcaption>
-                          </figure>
+                <h5 id="mdl">Material Design Language</h5>
+                Lecture Square utilized MDL's elements including Navigation Drawer and MotionButton, etc. </br>
+                his is material design. </br>
+                This spec is a living document that will be updated as we continue to develop the tenets and specifics of material design.
+                <section class="moduleF1">
+                  <div class="figure-group">
+                    <div class="figure-row">
+                      <figure>
+                        <div class="media">
+                          <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-eV81TDFrR2ZPU1E/whatismaterial_3d_elevation4.png"  />
+                        </div>
+                        <figcaption>
+                          <p>An example app layout with an open navigation drawer, along with a cross-section diagram of its component elevations along its z-axis.</p>
+                        </figcaption>
+                      </figure>
+                    </div>
                   </div>
+                </section>
+                <div class="figure-row">
+                  <figure class="">
+                  <div class="media">
+                    <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQUxBamxwdy15Vlk/patterns_actions_fab1.png" / />
+                  </div>
+                  <figcaption>
+                    <p>Floating action button</p>
+                  </figcaption>
                 </div>
-              </section>
-              <div class="figure-row">
-         <figure class="">
-                       <div class="media">
-                   <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQUxBamxwdy15Vlk/patterns_actions_fab1.png" / />
-                 </div>
-                     <figcaption>
-       <p>Floating action button</p>
-     </figcaption>
+              </setcion>
 
               <h5 id="gesture">Gesture detectors</h5>
-              Android gesture detectors.
+              There are multiple ways to achieve gesture detecting. Android gesture detectors. </br>
+              The basic structure of implementing the gesture detector is to take advantage of the OnTouchListener. In your Activity class you implement the android.view.View.OnTouchListener which makes you implement the onTouch(...) method. This way the Android system is able to inform the class any android.view.MotionEvent is happening. </br>
+              Android has a ScaleGestureDetector since API level 8 (Android 2.2), and therefore Android devices with multitouch screens appeared.
+              To initialize the ScaleGestureDetector, we want to start with initialization ScaleListener, so as to know when a scale event has happened and what scaling information is available. </br>
+              There is an opensource package providing the interfaces we could take advantage of, named <a href="https://github.com/Almeros/android-gesture-detectors">Android Gesture Detectors Framework</a>, including RotateGestureDetector, MoveGestureDetector, ScaleGestureDetector, etc. which is useful for this project.
 
               <h5 id="slidesplay">Play Slides</h5>
               Play slides using Html5 in a WebView.
