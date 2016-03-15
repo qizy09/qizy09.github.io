@@ -339,12 +339,12 @@ March 2nd - March 9th: Fix final bug fixes, create final report
                     <div class="figure-row">
                       <figure>
                         <div class="media">
-                          <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-eV81TDFrR2ZPU1E/whatismaterial_3d_elevation4.png"   style="height: 50px;"/>
+                          <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-eV81TDFrR2ZPU1E/whatismaterial_3d_elevation4.png"   style="height: 120px;"/>
                         </div>
                         <figcaption>
                           <p>An example app layout with an open navigation drawer, along with a cross-section diagram of its component elevations along its z-axis.</p>
                         </figcaption>
-                      </figure style="height: 50px;">
+                      </figure style="height: 120px;">
                       <figure class="">
                       <div class="media">
                         <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQUxBamxwdy15Vlk/patterns_actions_fab1.png"  style="height: 50px;" />
@@ -365,7 +365,13 @@ March 2nd - March 9th: Fix final bug fixes, create final report
               There is an opensource package providing the interfaces we could take advantage of, named <a href="https://github.com/Almeros/android-gesture-detectors">Android Gesture Detectors Framework</a>, including RotateGestureDetector, MoveGestureDetector, ScaleGestureDetector, etc. which is useful for this project.
 
               <h5 id="slidesplay">Play Slides</h5>
-              Play slides using Html5 in a WebView.
+              In order to setup an activity that plays slides inside the app, I considered multiple potential solutions to achieve this. </br>
+
+              Playing slides in Microsoft Powerpoint format(ppt/pptx) is definitley desired, since it's most widely used. However, it seems hard to find any official tutorials to implement or open source support to achieve this.</br>
+
+              Another alternative solution is to play html5 slides. Google provided an HTML5 Slide Template in io 2012, and it's still under maintainance. So another solution is to implement an activity subclassing Webview and embed the html5 slides inside.</br>
+
+              Android provoides a <a href="http://developer.android.com/reference/android/webkit/WebView.html">WebView</a> class, which is a View that displays web pages, useing the WebKit rendering engine to display web pages and includes methods to navigate forward and backward through a history, zoom in and out, perform text searches and more.
 
               <h5 id="sharenote">Notes and sharing</h5>
               Camera to take notes, bluetooth for share with team members.
