@@ -261,14 +261,6 @@ Wifi Direct
 Taking notes with camera
 Sharing with Bluetooth/ Google Drive
 Recording
-
-Feb 8th - Feb 14th: Research required technologies and familiarize ourselves with it
-Feb 15th - Feb 18th: Design the logic and build the app’s skeleton
-Feb 19th - Feb 22nd: Establish the connection between the app and computer
-Feb 23nd - Feb 26th: Complete the real-time drawing/note-writing & recording of the audio files
-Feb 27th - March1st: Complete the  interaction functions during lectures
-March 2nd - March 9th: Fix final bug fixes, create final report
-
  -->
 
         <div class="mdl-layout__tab-panel" id="details">
@@ -289,19 +281,35 @@ March 2nd - March 9th: Fix final bug fixes, create final report
               Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
               <ul class="toc">
                 <h4>Contents</h4>
-                <a href="#lorem1">Lorem ipsum</a>
-                <a href="#lorem2">Lorem ipsum</a>
-                <a href="#lorem3">Lorem ipsum</a>
-                <a href="#lorem4">Lorem ipsum</a>
-                <a href="#lorem5">Lorem ipsum</a>
+                <a href="#lorem0">Before Feb 7th</a>
+                <a href="#lorem1">Feb 8th - Feb 14th</a>
+                <a href="#lorem2">Feb 15th - Feb 18th</a>
+                <a href="#lorem3">Feb 19th - Feb 22nd</a>
+                <a href="#lorem4">Feb 23nd - Feb 26th:  </a>
+                <a href="#lorem5">Feb 27th - March1st:  </a>
+                <a href="#lorem6">March 2nd - March 9th: </a>
               </ul>
 
-              <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
-              Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
+              <h5 id="lorem6">March 2nd - March 9th:  </h5>
+              Fix final bug fixes, create final report
 
+              <h5 id="lorem5">Feb 27th - March1st:  </h5>
+              Complete the  interaction functions during lectures
 
+              <h5 id="lorem4">Feb 23nd - Feb 26th:  </h5>
+              Complete the real-time drawing/note-writing & recording of the audio files
 
+              <h5 id="lorem3">Feb 19th - Feb 22nd:  </h5>
+              Establish the connection between the app and computer
 
+              <h5 id="lorem2">Feb 15th - Feb 18th:  </h5>
+              Design the logic and build the app’s skeleton
+
+              <h5 id="lorem1">Feb 8th - Feb 14th: </h5>
+              Research required technologies and familiarize ourselves with it
+
+              <h5 id="#lorem0">Before Feb 7th </h5>
+              Project proposal and presentation.
 
               <h4>Future works</h4>
               More work for extensions.
@@ -319,7 +327,7 @@ March 2nd - March 9th: Fix final bug fixes, create final report
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
               <h4>Technology</h4>
-              Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              Below are the list of technologies used to break down this app's solution.
               <ul class="toc">
                 <h4>Contents</h4>
                 <a href="#mdl">MDL</a>
@@ -371,13 +379,16 @@ March 2nd - March 9th: Fix final bug fixes, create final report
 
               Another alternative solution is to play html5 slides. Google provided an HTML5 Slide Template in io 2012, and it's still under maintainance. So another solution is to implement an activity subclassing Webview and embed the html5 slides inside.</br>
 
-              Android provoides a <a href="http://developer.android.com/reference/android/webkit/WebView.html">WebView</a> class, which is a View that displays web pages, useing the WebKit rendering engine to display web pages and includes methods to navigate forward and backward through a history, zoom in and out, perform text searches and more.
+              Android provoides a <a href="http://developer.android.com/reference/android/webkit/WebView.html">WebView</a> class, which is a View that displays web pages, useing the WebKit rendering engine to display web pages and includes methods to navigate forward and backward through a history, zoom in and out, perform text searches and more.</br>
+
+              And there are definitely potential extension of this alternative solution, i.e. to extend the html5 with some plugins/lbraries that could play Microsoft Powerpoint/ Google Slides using html5. I'll look at that part later.
 
               <h5 id="sharenote">Notes and sharing</h5>
-              Camera to take notes, bluetooth for share with team members.
+              This app use Camera access permission to take notes, and share with team members using Bluetooth.</br>
+              The Android platform includes support for the Bluetooth network stack, which allows a device to wirelessly exchange data with other Bluetooth devices, with the application framework providing access to the Bluetooth functionality through the <a href="http://developer.android.com/guide/topics/connectivity/bluetooth.html">Android Bluetooth APIs</a>.
 
               <h5 id="gdrive">Google Drive Sharing</h5>
-              Internet access and Google API for send it to cloud.
+              With Internet access, this app use the <a href="https://developers.google.com/drive/v2/reference/permissions#resource-representations">Drive REST API</a> web API to send it to cloud and share with others.
             </div>
           </section>
         </div>
