@@ -25,6 +25,17 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.video { position: relative; }
+.video a {
+   position: absolute;
+   display: block;
+   background: url("http://www.roadtovr.com/wp-content/uploads/2015/03/youtube-logo2.jpg");
+   height: 40px;
+   width: 40px;
+   top: 20px;
+   left: 20px;
+}
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
